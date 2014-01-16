@@ -29,3 +29,11 @@ if test -f $HOME/.cwd;cd (cat $HOME/.cwd); end
 set PATH $PATH (ruby -rubygems -e 'puts Gem.user_dir')/bin
 alias cdcur 'cd (cat ~/.cwd)'
 
+#git aliases
+alias ga 'git add'
+alias gs 'git status'
+alias gl 'git lg'
+alias gc 'git commit'
+alias gp 'git push'
+alias gpl 'git pull'
+
