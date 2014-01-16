@@ -1,7 +1,14 @@
 URxvt.font: xft:Droid Sans Mono for Powerline:size=10
-URxvt.perl-ext-common: clipboard
+
+URxvt.perl-ext-common: clipboard,keyboard-select,url-select
+
+URxvt.keysym.Control-Escape: perl:keyboard-select:activate
+URxvt.keysym.Control-s: perl:keyboard-select:search
+
+URxvt.keysym.Control-u: perl:url-select:select_next
+
 URxvt.keysym.Control-Insert:   perl:clipboard:copy
-URxvt.keysym.Shift-Insert:   perl:clipboard:paste
+URxvt.keysym.Control-Delete:   perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 URxvt.clipboard.autocopy: true
 ! black
@@ -46,5 +53,4 @@ URxvt.color15 : #EEEEEEEEECEC
 
 URxvt*foreground:#CBCBCB
 URxvt*background:#222222
-
 

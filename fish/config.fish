@@ -36,4 +36,5 @@ alias gl 'git lg'
 alias gc 'git commit'
 alias gp 'git push'
 alias gpl 'git pull'
+alias gd 'git diff'
 
