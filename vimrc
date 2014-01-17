@@ -26,11 +26,13 @@ Bundle "airblade/vim-gitgutter"
 set number
 "hi FoldColumn ctermbg=222222
 hi SignColumn ctermbg=222222
+hi CursorLine cterm=NONE ctermbg=237
 filetype plugin indent on
 let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:syntastic_enable_signs=1
 let g:mustache_abbreviations = 1
 set laststatus=2
+map <F6> :source ~/.vimrc<CR>
 map <F2> :w<CR>
 map <F10> :q<CR>
 map <F11> :NERDTreeToggle<CR>
@@ -42,6 +44,7 @@ set tabstop=2
 set shiftwidth=2
 set timeoutlen=1000 ttimeoutlen=0
 set noshowmode
+set cursorline
 " Tell vim to remember certain things when we exit
 " "  '10  :  marks will be remembered for up to 10 previously edited files
 " "  "100 :  will save up to 100 lines for each register
