@@ -20,7 +20,6 @@ Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 Bundle "triglav/vim-visual-increment"
 Bundle "mustache/vim-mustache-handlebars"
-Bundle "majutsushi/tagbar"
 Bundle "airblade/vim-gitgutter"
 "colorscheme Tron 
 set number
