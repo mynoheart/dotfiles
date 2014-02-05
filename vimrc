@@ -21,11 +21,14 @@ Bundle "honza/vim-snippets"
 Bundle "triglav/vim-visual-increment"
 Bundle "mustache/vim-mustache-handlebars"
 Bundle "airblade/vim-gitgutter"
+Bundle "godlygeek/tabular"
 "colorscheme Tron 
 set number
 "hi FoldColumn ctermbg=222222
 hi SignColumn ctermbg=222222
 hi CursorLine cterm=NONE ctermbg=237
+hi Visual ctermbg=237
+
 filetype plugin indent on
 let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:syntastic_enable_signs=1
