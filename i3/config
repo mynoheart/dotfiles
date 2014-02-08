@@ -24,6 +24,10 @@ font pango:Droid Sans Mono for Powerline 10
 floating_modifier $mod
 
 
+# autostart
+exec nm-applet
+exec pulseaudio --start
+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
