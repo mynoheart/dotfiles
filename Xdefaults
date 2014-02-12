@@ -1,6 +1,9 @@
 URxvt.font: xft:Droid Sans Mono for Powerline:size=10
 URxvt.scrollstyle: plain
-URxvt.scrollColor: #525252
+URxvt.scrollColor: #222222
+URxvt.borderColor: #303030
+URxvt.internalBorder: 0
+URxvt.externalBorder: 0
 
 URxvt.perl-ext-common: clipboard,keyboard-select,url-select
 
