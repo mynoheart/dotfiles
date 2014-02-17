@@ -22,6 +22,8 @@ Bundle "triglav/vim-visual-increment"
 Bundle "mustache/vim-mustache-handlebars"
 Bundle "airblade/vim-gitgutter"
 Bundle "godlygeek/tabular"
+Bundle "ekalinin/Dockerfile.vim"
+Bundle "evanmiller/nginx-vim-syntax"
 "colorscheme Tron 
 set number
 "hi FoldColumn ctermbg=222222
