@@ -22,6 +22,7 @@ Bundle "triglav/vim-visual-increment"
 Bundle "mustache/vim-mustache-handlebars"
 Bundle "airblade/vim-gitgutter"
 Bundle "godlygeek/tabular"
+Bundle "laurentgoudet/vim-howdoi"
 "colorscheme Tron 
 set number
 "hi FoldColumn ctermbg=222222
