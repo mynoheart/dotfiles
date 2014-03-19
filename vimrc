@@ -30,7 +30,8 @@ set number
 "hi FoldColumn ctermbg=222222
 hi SignColumn ctermbg=222222
 hi CursorLine cterm=NONE ctermbg=237
-hi Visual ctermbg=237
+hi Visual ctermbg=239
+hi Search ctermbg=239
 
 filetype plugin indent on
 let g:ctrlp_cmd = 'CtrlPBuffer'
@@ -43,6 +44,7 @@ map <F10> :q<CR>
 map <F11> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 nnoremap <F3> :set nonumber!<CR>
+noremap <F7> :set hlsearch! hlsearch? <CR>
 set pastetoggle=<F9>
 set expandtab
 set tabstop=2
