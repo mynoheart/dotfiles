@@ -2,11 +2,11 @@ set shell=bash
 set nocompatible
 syntax on
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
-call vundle#rc()
+call vundle#begin()
 "Plugins
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'Lokaltog/powerline'
 Bundle 'daylerees/colour-schemes', {'rtp': 'vim-themes/'}
@@ -25,6 +25,9 @@ Bundle "godlygeek/tabular"
 Bundle "laurentgoudet/vim-howdoi"
 Bundle "ekalinin/Dockerfile.vim"
 Bundle "evanmiller/nginx-vim-syntax"
+
+call vundle#end()
+filetype plugin indent on
 "colorscheme Tron 
 set number
 "hi FoldColumn ctermbg=222222
@@ -33,7 +36,6 @@ hi CursorLine cterm=NONE ctermbg=237
 hi Visual ctermbg=239
 hi Search ctermbg=239
 
-filetype plugin indent on
 let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:syntastic_enable_signs=1
 let g:mustache_abbreviations = 1
