@@ -39,7 +39,7 @@ hi Search ctermbg=239
 let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:syntastic_enable_signs=1
 let g:mustache_abbreviations = 1
-let g:asmsyntax = 'nasm'
+"let g:asmsyntax = 'nasm'
 set laststatus=2
 map <F5> :e<CR>
 map <F6> :source ~/.vimrc<CR>
