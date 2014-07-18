@@ -8,9 +8,9 @@ URxvt.externalBorder: 0
 URxvt.perl-ext-common: clipboard,keyboard-select,url-select
 
 URxvt.keysym.Control-Escape: perl:keyboard-select:activate
-URxvt.keysym.Control-s: perl:keyboard-select:search
+#URxvt.keysym.Control-s: perl:keyboard-select:search
 
-URxvt.keysym.Control-u: perl:url-select:select_next
+#URxvt.keysym.Control-u: perl:url-select:select_next
 
 URxvt.keysym.Control-Insert:   perl:clipboard:copy
 URxvt.keysym.Control-Delete:   perl:clipboard:paste
