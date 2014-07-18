@@ -1,8 +1,9 @@
 # Path to your oh-my-fish.
 set fish_path $HOME/.oh-my-fish
-set -x OCI_HOME /opt/instantclient_11_2
+set -x OCI_HOME /opt/instantclient_12_1
 set -x OCI_LIB_DIR $OCI_HOME
 set -x OCI_INCLUDE_DIR $OCI_HOME/sdk/include
+set -x OCI_VERSION 12
 # Theme
 # set fish_theme agnoster
 set fish_theme bobthefish
@@ -38,3 +39,5 @@ alias gp 'git push'
 alias gpl 'git pull'
 alias gd 'git diff'
 
+#npm aliases
+alias npm-exec 'set PATH $PATH (npm bin)'
