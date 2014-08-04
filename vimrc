@@ -25,6 +25,7 @@ Bundle "godlygeek/tabular"
 Bundle "laurentgoudet/vim-howdoi"
 Bundle "ekalinin/Dockerfile.vim"
 Bundle "evanmiller/nginx-vim-syntax"
+Bundle "dag/vim-fish"
 
 call vundle#end()
 filetype plugin indent on
@@ -56,6 +57,7 @@ set shiftwidth=2
 set timeoutlen=1000 ttimeoutlen=0
 set noshowmode
 set cursorline
+set nrformats=alpha
 " Tell vim to remember certain things when we exit
 " "  '10  :  marks will be remembered for up to 10 previously edited files
 " "  "100 :  will save up to 100 lines for each register
