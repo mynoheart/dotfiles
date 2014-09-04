@@ -4,6 +4,8 @@ syntax on
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
+set backupdir=/tmp
+set directory=/tmp
 call vundle#begin()
 "Plugins
 Bundle 'gmarik/Vundle.vim'
