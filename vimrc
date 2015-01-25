@@ -28,6 +28,7 @@ Bundle "laurentgoudet/vim-howdoi"
 Bundle "ekalinin/Dockerfile.vim"
 Bundle "evanmiller/nginx-vim-syntax"
 Bundle "dag/vim-fish"
+Bundle "fatih/vim-go"
 
 call vundle#end()
 filetype plugin indent on
