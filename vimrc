@@ -29,6 +29,7 @@ Bundle "ekalinin/Dockerfile.vim"
 Bundle "evanmiller/nginx-vim-syntax"
 Bundle "dag/vim-fish"
 Bundle "fatih/vim-go"
+Bundle "jiangmiao/auto-pairs"
 
 call vundle#end()
 filetype plugin indent on
