@@ -30,7 +30,7 @@ Bundle "evanmiller/nginx-vim-syntax"
 Bundle "dag/vim-fish"
 Bundle "fatih/vim-go"
 Bundle "jiangmiao/auto-pairs"
-
+Bundle "tomtom/tcomment_vim"
 call vundle#end()
 filetype plugin indent on
 "colorscheme Tron 
