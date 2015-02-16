@@ -31,6 +31,7 @@ Bundle "dag/vim-fish"
 Bundle "fatih/vim-go"
 Bundle "jiangmiao/auto-pairs"
 Bundle "tomtom/tcomment_vim"
+Bundle "bronson/vim-trailing-whitespace"
 call vundle#end()
 filetype plugin indent on
 "colorscheme Tron 
