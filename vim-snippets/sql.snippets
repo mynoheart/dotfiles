@@ -1,0 +1,11 @@
+snippet cti
+	create table if not exists ${1} (
+	  ${0}
+	);
+snippet csi
+	create sequence if not exists ${1}
+	  start with 1 minvalue 1 nocycle cache 20;
+snippet dti
+	drop table if exists ${0};
+snippet dsi
+	drop table if exists ${0};
