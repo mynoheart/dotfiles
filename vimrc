@@ -44,6 +44,7 @@ hi Search ctermbg=239
 
 let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:syntastic_enable_signs=1
+let g:syntastic_html_tidy_ignore_errors = [ '{{', '}}', 'unexpected or duplicate quote mark', 'proprietary attribute', 'trimming' ]
 let g:mustache_abbreviations = 1
 "let g:asmsyntax = 'nasm'
 set laststatus=2
