@@ -32,9 +32,10 @@ Bundle "fatih/vim-go"
 Bundle "jiangmiao/auto-pairs"
 Bundle "tomtom/tcomment_vim"
 Bundle "bronson/vim-trailing-whitespace"
+Bundle "gregsexton/MatchTag"
 call vundle#end()
 filetype plugin indent on
-"colorscheme Tron 
+"colorscheme Tron
 set number
 "hi FoldColumn ctermbg=222222
 hi SignColumn ctermbg=222222
