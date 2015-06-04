@@ -1,4 +1,5 @@
 URxvt.font: xft:Droid Sans Mono for Powerline:size=10
+Xft.dpi: 96
 URxvt.scrollstyle: plain
 URxvt.scrollColor: #222222
 URxvt.borderColor: #303030

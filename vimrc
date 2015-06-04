@@ -52,6 +52,8 @@ set laststatus=2
 map <F5> :e<CR>
 map <F6> :source ~/.vimrc<CR>
 map <F2> :w<CR>
+map <C-s> :w<CR>
+imap <C-s> <Esc>:w<CR>
 map <F10> :q<CR>
 map <F11> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
@@ -84,4 +86,4 @@ augroup resCur
   autocmd!
   autocmd BufWinEnter * call ResCur()
 augroup END
-au InsertLeave * :w
+" au InsertLeave * :w
