@@ -1,5 +1,6 @@
 set shell=bash
 set nocompatible
+
 syntax on
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -11,7 +12,6 @@ call vundle#begin()
 Bundle 'gmarik/Vundle.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'Lokaltog/powerline'
-Bundle 'daylerees/colour-schemes', {'rtp': 'vim-themes/'}
 Bundle 'Shougo/neocomplcache'
 Bundle 'scrooloose/nerdtree'
 Bundle 'corntrace/bufexplorer'
@@ -33,9 +33,9 @@ Bundle "jiangmiao/auto-pairs"
 Bundle "tomtom/tcomment_vim"
 Bundle "bronson/vim-trailing-whitespace"
 Bundle "gregsexton/MatchTag"
+Bundle "talek/vorax4"
 call vundle#end()
 filetype plugin indent on
-"colorscheme Tron
 set number
 "hi FoldColumn ctermbg=222222
 hi SignColumn ctermbg=222222
@@ -87,3 +87,6 @@ augroup resCur
   autocmd BufWinEnter * call ResCur()
 augroup END
 " au InsertLeave * :w
+
+set mouse=a
+set noequalalways

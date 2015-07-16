@@ -3,6 +3,7 @@ set fish_path $HOME/.oh-my-fish
 set -x OCI_HOME /opt/instantclient_12_1
 set -x OCI_LIB_DIR $OCI_HOME
 set -x OCI_INCLUDE_DIR $OCI_HOME/sdk/include
+set -x OCI_INC_DIR $OCI_HOME/sdk/include
 set -x OCI_VERSION 12
 # Theme
 # set fish_theme agnoster
@@ -41,3 +42,11 @@ alias gd 'git diff'
 
 #npm aliases
 alias npm-exec 'set PATH $PATH (npm bin)'
+
+set -x GOPATH ~/Develop/go
+set -x PKG_CONFIG_PATH $GOPATH/pkg-configs
+
+set -x ORACLE_HOME /usr/lib/oracle/product/11.2.0/xe
+set -x TNS_ADMIN $HOME/oracle-home/
+
+set -x NLS_LANG 'AMERICAN_AMERICA.AL32UTF8'
