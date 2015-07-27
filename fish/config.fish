@@ -44,9 +44,11 @@ alias gd 'git diff'
 alias npm-exec 'set PATH $PATH (npm bin)'
 
 set -x GOPATH ~/Develop/go
+set -x PATH $PATH $GOPATH/bin/
 set -x PKG_CONFIG_PATH $GOPATH/pkg-configs
 
-set -x ORACLE_HOME /usr/lib/oracle/product/11.2.0/xe
-set -x TNS_ADMIN $HOME/oracle-home/
+# set -x ORACLE_HOME /usr/lib/oracle/product/11.2.0/xe
+# set -x TNS_ADMIN $HOME/oracle-home/
 
 set -x NLS_LANG 'AMERICAN_AMERICA.AL32UTF8'
+set -x LD_LIBRARY_PATH /opt/instantclient_12_1/
