@@ -34,6 +34,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'gregsexton/MatchTag'
 Plugin 'majutsushi/tagbar'
 Plugin 'cespare/vim-toml'
+Plugin 'morhetz/gruvbox'
 call vundle#end()
 filetype plugin indent on
 set number
