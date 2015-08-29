@@ -114,3 +114,8 @@ augroup END
 
 set mouse=a
 set noequalalways
+
+map <C-k> <C-w><Up>
+map <C-j> <C-w><Down>
+map <C-l> <C-w><Right>
+map <C-h> <C-w><Left>
