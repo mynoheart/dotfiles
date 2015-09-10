@@ -37,6 +37,7 @@ Plugin 'cespare/vim-toml'
 Plugin 'morhetz/gruvbox'
 call vundle#end()
 filetype plugin indent on
+colorscheme default
 set number
 "hi FoldColumn ctermbg=222222
 hi SignColumn ctermbg=222222
