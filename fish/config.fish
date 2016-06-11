@@ -28,7 +28,7 @@ set fish_theme bobthefish
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 if test -f $HOME/.cwd;cd (cat $HOME/.cwd); end
-set PATH $PATH (ruby -rubygems -e 'puts Gem.user_dir')/bin
+# set PATH $PATH (ruby -rubygems -e 'puts Gem.user_dir')/bin
 alias cdcur 'cd (cat ~/.cwd)'
 
 #git aliases
@@ -43,8 +43,8 @@ alias gd 'git diff'
 #npm aliases
 alias npm-exec 'set PATH $PATH (npm bin)'
 
-set -x GOPATH ~/Develop/go
-set -x PATH $PATH $GOPATH/bin/
+# set -x GOPATH ~/Develop/go
+# set -x PATH $PATH $GOPATH/bin/
 set -x PATH $PATH ~/.gotools/
 set -x PKG_CONFIG_PATH $GOPATH/pkg-configs
 
