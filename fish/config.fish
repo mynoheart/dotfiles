@@ -45,6 +45,7 @@ alias npm-exec 'set PATH $PATH (npm bin)'
 
 set -x GOPATH ~/Develop/go
 set -x PATH $PATH $GOPATH/bin/
+set -x PATH $PATH ~/.gotools/
 set -x PKG_CONFIG_PATH $GOPATH/pkg-configs
 
 # set -x ORACLE_HOME /usr/lib/oracle/product/11.2.0/xe

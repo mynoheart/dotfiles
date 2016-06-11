@@ -1,4 +1,4 @@
-set shell=bash
+set shell=/usr/bin/sh
 set nocompatible
 
 syntax on
@@ -47,20 +47,24 @@ hi Search ctermbg=239
 
 let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:syntastic_enable_signs=1
-let g:syntastic_ignore_files = [ '\.go$' ]
 let g:syntastic_html_tidy_ignore_errors = [ '{{', '}}', 'unexpected or duplicate quote mark', 'proprietary attribute', 'trimming' ]
 let g:mustache_abbreviations = 1
 let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
+
+" vim-go settings start
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
+let g:go_highlight_interfaces = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
-let g:go_auto_type_info = 1
+let g:go_bin_path = expand("~/.gotools")
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
@@ -72,6 +76,8 @@ au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <Leader>e <Plug>(go-rename)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
+" vim-go settings end
+
 "let g:asmsyntax = 'nasm'
 set laststatus=2
 map <F5> :e<CR>
@@ -113,7 +119,7 @@ augroup resCur
 augroup END
 " au InsertLeave * :w
 
-set mouse=a
+" set mouse=a
 set noequalalways
 
 map <C-k> <C-w><Up>
