@@ -1,6 +1,6 @@
 # Path to your oh-my-fish.
 
-set -x LANG="en_US.UTF-8"
+set -x LANG "en_US.UTF-8"
 
 set fish_path $HOME/.oh-my-fish
 set -x OCI_HOME /opt/instantclient_12_1
