@@ -1,7 +1,21 @@
-URxvt.font: xft:Droid Sans Mono for Powerline:size=10
+! URxvt.font: xft:Droid Sans Mono for Powerline:size=10
+! URxvt.font: xft:Droid Sans Mono Dotted for Powerline:size=11
+! URxvt.font: xft:Droid Sans Mono Slashed for Powerline:size=11
+!
+! URxvt.font: xft:Roboto Mono for Powerline:size=12
+! URxvt.font: xft:Roboto Mono Light for Powerline:size=11
+URxvt.font: xft:Roboto Mono Medium for Powerline:size=11
+!
+! URxvt.font: xft:DejaVu Sans Mono for Powerline:size=10
+! URxvt.font: xft:Cousine for Powerline:size=12
+! URxvt.font: xft:Anonymice Powerline:size=12
+! URxvt.font: xft:Ubuntu Mono derivative Powerline:size=13
+! URxvt.font: xft:Literation Mono Powerline:size=12
+
+
 URxvt.scrollstyle: plain
-URxvt.scrollColor: #222222
-URxvt.borderColor: #303030
+! URxvt.scrollColor: #222222
+! URxvt.borderColor: #303030
 URxvt.internalBorder: 0
 URxvt.externalBorder: 0
 
@@ -16,6 +30,9 @@ URxvt.keysym.Control-Insert:   perl:clipboard:copy
 URxvt.keysym.Control-Delete:   perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 URxvt.clipboard.autocopy: true
+
+
+
 ! black
 
 URxvt.color0  : #393939
@@ -56,6 +73,7 @@ URxvt.color14 : #7bc2c6
 URxvt.color7  : #D3D3D7D7CFCF
 URxvt.color15 : #EEEEEEEEECEC
 
-URxvt*foreground:#CBCBCB
-URxvt*background:#222222
-
+! URxvt*foreground:#CBCBCB
+! URxvt*background:#222222
+URxvt*foreground:#242424
+URxvt*background:#f1f1f1

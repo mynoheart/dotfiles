@@ -41,9 +41,12 @@ colorscheme default
 set number
 "hi FoldColumn ctermbg=222222
 hi SignColumn ctermbg=222222
-hi CursorLine cterm=NONE ctermbg=237
-hi Visual ctermbg=239
-hi Search ctermbg=239
+" hi CursorLine cterm=NONE ctermbg=237
+hi CursorLine cterm=NONE ctermbg=7
+" hi Visual ctermbg=239
+" hi Search ctermbg=239
+hi Visual ctermbg=247
+hi Search ctermbg=247
 
 let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:syntastic_enable_signs=1
