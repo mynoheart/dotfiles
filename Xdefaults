@@ -4,7 +4,7 @@
 !
 ! URxvt.font: xft:Roboto Mono for Powerline:size=12
 ! URxvt.font: xft:Roboto Mono Light for Powerline:size=11
-URxvt.font: xft:Roboto Mono Medium for Powerline:size=11
+URxvt.font: xft:Roboto Mono Medium for Powerline:size=11:rgba=rgba
 !
 ! URxvt.font: xft:DejaVu Sans Mono for Powerline:size=10
 ! URxvt.font: xft:Cousine for Powerline:size=12
@@ -22,9 +22,9 @@ URxvt.externalBorder: 0
 URxvt.perl-ext-common: clipboard,keyboard-select,url-select
 
 URxvt.keysym.Control-Escape: perl:keyboard-select:activate
-#URxvt.keysym.Control-s: perl:keyboard-select:search
+!URxvt.keysym.Control-s: perl:keyboard-select:search
 
-#URxvt.keysym.Control-u: perl:url-select:select_next
+!URxvt.keysym.Control-u: perl:url-select:select_next
 
 URxvt.keysym.Control-Insert:   perl:clipboard:copy
 URxvt.keysym.Control-Delete:   perl:clipboard:paste
@@ -77,3 +77,11 @@ URxvt.color15 : #EEEEEEEEECEC
 ! URxvt*background:#222222
 URxvt*foreground:#242424
 URxvt*background:#f1f1f1
+
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.dpi: 96
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb

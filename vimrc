@@ -9,32 +9,55 @@ set backupdir=/tmp
 set directory=/tmp
 call vundle#begin()
 "Plugins
-Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'Lokaltog/powerline'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'corntrace/bufexplorer'
-Plugin 'kien/ctrlp.vim'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-Plugin 'triglav/vim-visual-increment'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'godlygeek/tabular'
-Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'evanmiller/nginx-vim-syntax'
-Plugin 'dag/vim-fish'
-Plugin 'fatih/vim-go'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'gregsexton/MatchTag'
-Plugin 'majutsushi/tagbar'
-Plugin 'cespare/vim-toml'
-Plugin 'morhetz/gruvbox'
+  Plugin 'VundleVim/Vundle.vim'
+
+  "Lib
+    Plugin 'tomtom/tlib_vim'
+    Plugin 'MarcWeber/vim-addon-mw-utils'
+  "
+
+  "Syntax
+    Plugin 'scrooloose/syntastic'
+    Plugin 'evanmiller/nginx-vim-syntax'
+    Plugin 'mustache/vim-mustache-handlebars'
+    Plugin 'ekalinin/Dockerfile.vim'
+    Plugin 'dag/vim-fish'
+    Plugin 'cespare/vim-toml'
+    Plugin 'pangloss/vim-javascript'
+  "
+
+  "Interface
+    Plugin 'powerline/powerline'
+    Plugin 'scrooloose/nerdtree'
+    Plugin 'corntrace/bufexplorer'
+    Plugin 'ctrlpvim/ctrlp.vim'
+    Plugin 'airblade/vim-gitgutter'
+    Plugin 'bronson/vim-trailing-whitespace'
+    Plugin 'majutsushi/tagbar'
+    Plugin 'eugen0329/vim-esearch'
+  "
+
+  "Complete, snippets
+    Plugin 'Valloric/YouCompleteMe'
+    Plugin 'SirVer/ultisnips'
+    Plugin 'honza/vim-snippets'
+    Plugin 'Shougo/neocomplete.vim'
+  "
+
+  "Edit
+    Plugin 'triglav/vim-visual-increment'
+    Plugin 'godlygeek/tabular'
+    Plugin 'jiangmiao/auto-pairs'
+    Plugin 'tomtom/tcomment_vim'
+    Plugin 'ternjs/tern_for_vim'
+    Plugin 'tpope/vim-surround'
+  "
+
+  "Complex
+    Plugin 'fatih/vim-go'
+  "
+"
+
 call vundle#end()
 filetype plugin indent on
 colorscheme default
@@ -53,6 +76,7 @@ let g:syntastic_enable_signs=1
 let g:syntastic_html_tidy_ignore_errors = [ '{{', '}}', 'unexpected or duplicate quote mark', 'proprietary attribute', 'trimming' ]
 let g:mustache_abbreviations = 1
 let g:acp_enableAtStartup = 0
+
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
@@ -129,3 +153,19 @@ map <C-k> <C-w><Up>
 map <C-j> <C-w><Down>
 map <C-l> <C-w><Right>
 map <C-h> <C-w><Left>
+
+nnoremap th :tabfirst<CR>
+nnoremap tj :tabnext<CR>
+nnoremap tk :tabprev<CR>
+nnoremap tl :tablast<CR>
+nnoremap tt :tabedit<Space>
+nnoremap tn :tabnext<Space>
+nnoremap tm :tabm<Space>
+nnoremap td :tabclose<CR>
+
+let g:esearch#out#win#open = 'new'
+let g:UltiSnipsExpandTrigger="<c-j>"
+
+let g:ycm_filetype_blacklist = { 'go': 1 }
+
+autocmd FileType javascript NeoCompleteLock
