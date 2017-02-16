@@ -9,53 +9,53 @@ set backupdir=/tmp
 set directory=/tmp
 call vundle#begin()
 "Plugins
-  Plugin 'VundleVim/Vundle.vim'
+ Plugin 'VundleVim/Vundle.vim'
 
-  "Lib
-    Plugin 'tomtom/tlib_vim'
-    Plugin 'MarcWeber/vim-addon-mw-utils'
-  "
+ "Lib
+   Plugin 'tomtom/tlib_vim'
+   Plugin 'MarcWeber/vim-addon-mw-utils'
+ "
 
-  "Syntax
-    Plugin 'scrooloose/syntastic'
-    Plugin 'evanmiller/nginx-vim-syntax'
-    Plugin 'mustache/vim-mustache-handlebars'
-    Plugin 'ekalinin/Dockerfile.vim'
-    Plugin 'dag/vim-fish'
-    Plugin 'cespare/vim-toml'
-    Plugin 'pangloss/vim-javascript'
-  "
+ "Syntax
+   Plugin 'scrooloose/syntastic'
+   Plugin 'evanmiller/nginx-vim-syntax'
+   Plugin 'mustache/vim-mustache-handlebars'
+   Plugin 'ekalinin/Dockerfile.vim'
+   Plugin 'dag/vim-fish'
+   Plugin 'cespare/vim-toml'
+   Plugin 'pangloss/vim-javascript'
+ "
 
-  "Interface
-    Plugin 'powerline/powerline'
-    Plugin 'scrooloose/nerdtree'
-    Plugin 'corntrace/bufexplorer'
-    Plugin 'ctrlpvim/ctrlp.vim'
-    Plugin 'airblade/vim-gitgutter'
-    Plugin 'bronson/vim-trailing-whitespace'
-    Plugin 'majutsushi/tagbar'
-    Plugin 'eugen0329/vim-esearch'
-  "
+ "Interface
+   Plugin 'powerline/powerline'
+   Plugin 'scrooloose/nerdtree'
+   Plugin 'corntrace/bufexplorer'
+   Plugin 'ctrlpvim/ctrlp.vim'
+   Plugin 'airblade/vim-gitgutter'
+   Plugin 'bronson/vim-trailing-whitespace'
+   Plugin 'majutsushi/tagbar'
+   Plugin 'eugen0329/vim-esearch'
+ "
 
-  "Complete, snippets
-    Plugin 'Valloric/YouCompleteMe'
-    Plugin 'SirVer/ultisnips'
-    Plugin 'honza/vim-snippets'
-    Plugin 'Shougo/neocomplete.vim'
-  "
+ "Complete, snippets
+   Plugin 'Valloric/YouCompleteMe'
+   Plugin 'SirVer/ultisnips'
+   Plugin 'honza/vim-snippets'
+   Plugin 'Shougo/neocomplete.vim'
+ "
 
-  "Edit
-    Plugin 'triglav/vim-visual-increment'
-    Plugin 'godlygeek/tabular'
-    Plugin 'jiangmiao/auto-pairs'
-    Plugin 'tomtom/tcomment_vim'
-    Plugin 'ternjs/tern_for_vim'
-    Plugin 'tpope/vim-surround'
-  "
+ "Edit
+   Plugin 'triglav/vim-visual-increment'
+   Plugin 'godlygeek/tabular'
+   Plugin 'jiangmiao/auto-pairs'
+   Plugin 'tomtom/tcomment_vim'
+   Plugin 'ternjs/tern_for_vim'
+   Plugin 'tpope/vim-surround'
+ "
 
-  "Complex
-    Plugin 'fatih/vim-go'
-  "
+ "Complex
+   Plugin 'fatih/vim-go'
+ "
 "
 
 call vundle#end()

@@ -31,3 +31,8 @@ set -x PKG_CONFIG_PATH $GOPATH/pkg-configs
 if test -e ~/.config/fish/config-local.fish
   source ~/.config/fish/config-local.fish
 end
+
+set -x PATH /usr/local/bin/ $PATH 
+
+alias vimnp 'vim --noplugin'
+alias vima 'vim -u ~/.vimrca --cmd \'set runtimepath=~/.vima,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after\''
