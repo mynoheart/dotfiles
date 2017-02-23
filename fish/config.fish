@@ -36,3 +36,7 @@ set -x PATH /usr/local/bin/ $PATH
 
 alias vimnp 'vim --noplugin'
 alias vima 'vim -u ~/.vimrca --cmd \'set runtimepath=~/.vima,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after\''
+
+set -x TERM xterm-256color
+
+set PATH $PATH (ruby -rubygems -e 'puts Gem.user_dir')/bin
