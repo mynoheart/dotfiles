@@ -11,3 +11,4 @@
   path = .gitconfig-work
 [core]
 	editor = vim
+	quotepath = false
